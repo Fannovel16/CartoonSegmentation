@@ -1,4 +1,4 @@
-import mmcv as mmcv, torch
+import custom_mmcv_210 as mmcv, torch
 from tqdm import tqdm
 from einops import rearrange
 import os
@@ -10,17 +10,17 @@ import math
 from .anime_instances import AnimeInstances
 import numpy as np
 from typing import List, Tuple, Union, Optional, Callable
-from mmengine import Config
-from mmengine.model.utils import revert_sync_batchnorm
-from mmdet.utils import register_all_modules, get_test_pipeline_cfg
-from mmdet.apis import init_detector
-from mmdet.registry import MODELS
-from mmdet.structures import DetDataSample, SampleList
-from mmdet.structures.bbox.transforms import scale_boxes, get_box_wh
-from mmdet.models.dense_heads.rtmdet_ins_head import RTMDetInsHead
+from custom_mmengine_0102 import Config
+from custom_mmengine_0102.model.utils import revert_sync_batchnorm
+from custom_mmdet_330.utils import register_all_modules, get_test_pipeline_cfg
+from custom_mmdet_330.apis import init_detector
+from custom_mmdet_330.registry import MODELS
+from custom_mmdet_330.structures import DetDataSample, SampleList
+from custom_mmdet_330.structures.bbox.transforms import scale_boxes, get_box_wh
+from custom_mmdet_330.models.dense_heads.rtmdet_ins_head import RTMDetInsHead
 from pycocotools.coco import COCO
-from mmcv.transforms import Compose
-from mmdet.models.detectors.single_stage import SingleStageDetector
+from custom_mmcv_210.transforms import Compose
+from custom_mmdet_330.models.detectors.single_stage import SingleStageDetector
 
 from utils.logger import LOGGER
 from utils.io_utils import square_pad_resize, find_all_imgs, imglist2grid, mask2rle, dict2json, scaledown_maxsize, resize_pad

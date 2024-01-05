@@ -3,16 +3,16 @@ import numpy as np
 from typing import List, Optional, Sequence, Tuple, Union
 import copy
 from time import time
-import mmcv as mmcv
-from mmcv.transforms import to_tensor
-from mmdet.datasets.transforms import LoadAnnotations, RandomCrop, PackDetInputs, Mosaic, CachedMosaic, CachedMixUp, FilterAnnotations
-from mmdet.structures.mask import BitmapMasks, PolygonMasks
-from mmdet.datasets import CocoDataset
-from mmdet.registry import DATASETS, TRANSFORMS
+import custom_mmcv_210 as mmcv
+from custom_mmcv_210.transforms import to_tensor
+from custom_mmdet_330.datasets.transforms import LoadAnnotations, RandomCrop, PackDetInputs, Mosaic, CachedMosaic, CachedMixUp, FilterAnnotations
+from custom_mmdet_330.structures.mask import BitmapMasks, PolygonMasks
+from custom_mmdet_330.datasets import CocoDataset
+from custom_mmdet_330.registry import DATASETS, TRANSFORMS
 from numpy import random
-from mmdet.structures.bbox import autocast_box_type, BaseBoxes
-from mmengine.structures import InstanceData, PixelData
-from mmdet.structures import DetDataSample
+from custom_mmdet_330.structures.bbox import autocast_box_type, BaseBoxes
+from custom_mmengine_0102.structures import InstanceData, PixelData
+from custom_mmdet_330.structures import DetDataSample
 from utils.io_utils import bbox_overlap_xy
 from utils.logger import LOGGER
 

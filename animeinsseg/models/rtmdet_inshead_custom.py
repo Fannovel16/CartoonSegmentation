@@ -6,24 +6,24 @@ from typing import List, Optional, Tuple
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from mmcv.cnn import ConvModule, is_norm
-from mmcv.ops import batched_nms
-from mmengine.model import (BaseModule, bias_init_with_prob, constant_init,
+from custom_mmcv_210.cnn import ConvModule, is_norm
+from custom_mmcv_210.ops import batched_nms
+from custom_mmengine_0102.model import (BaseModule, bias_init_with_prob, constant_init,
                             normal_init)
-from mmengine.structures import InstanceData
+from custom_mmengine_0102.structures import InstanceData
 from torch import Tensor
 
-from mmdet.models.layers.transformer import inverse_sigmoid
-from mmdet.models.utils import (filter_scores_and_topk, multi_apply,
+from custom_mmdet_330.models.layers.transformer import inverse_sigmoid
+from custom_mmdet_330.models.utils import (filter_scores_and_topk, multi_apply,
                                 select_single_mlvl, sigmoid_geometric_mean)
-from mmdet.registry import MODELS
-from mmdet.structures.bbox import (cat_boxes, distance2bbox, get_box_tensor,
+from custom_mmdet_330.registry import MODELS
+from custom_mmdet_330.structures.bbox import (cat_boxes, distance2bbox, get_box_tensor,
                                    get_box_wh, scale_boxes)
-from mmdet.utils import ConfigType, InstanceList, OptInstanceList, reduce_mean
-from mmdet.models.dense_heads.rtmdet_head import RTMDetHead
-from mmdet.models.dense_heads.rtmdet_ins_head import RTMDetInsHead, RTMDetInsSepBNHead, MaskFeatModule
+from custom_mmdet_330.utils import ConfigType, InstanceList, OptInstanceList, reduce_mean
+from custom_mmdet_330.models.dense_heads.rtmdet_head import RTMDetHead
+from custom_mmdet_330.models.dense_heads.rtmdet_ins_head import RTMDetInsHead, RTMDetInsSepBNHead, MaskFeatModule
 
-from mmdet.utils import AvoidCUDAOOM
+from custom_mmdet_330.utils import AvoidCUDAOOM
 
 
 
