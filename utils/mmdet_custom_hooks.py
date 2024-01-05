@@ -8,11 +8,11 @@ import os.path as osp
 import cv2
 from typing import Optional, Sequence
 import torch.nn as nn
-from mmdet.apis import inference_detector
-from mmcv.transforms import Compose
-from mmdet.engine import DetVisualizationHook
-from mmdet.registry import HOOKS
-from mmdet.structures import DetDataSample
+from custom_mmdet.apis import inference_detector
+from custom_mmcv.transforms import Compose
+from custom_mmdet.engine import DetVisualizationHook
+from custom_mmdet.registry import HOOKS
+from custom_mmdet.structures import DetDataSample
 
 from utils.io_utils import find_all_imgs, square_pad_resize, imglist2grid
 
