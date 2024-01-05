@@ -1,4 +1,4 @@
-import mmcv, torch
+import custom_mmcv as mmcv, torch
 from tqdm import tqdm
 from einops import rearrange
 import os

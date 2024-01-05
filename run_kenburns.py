@@ -1,4 +1,4 @@
-import mmcv
+import custom_mmcv as mmcv
 import argparse
 import os, sys
 import os.path as osp

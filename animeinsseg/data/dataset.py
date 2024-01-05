@@ -3,7 +3,7 @@ import numpy as np
 from typing import List, Optional, Sequence, Tuple, Union
 import copy
 from time import time
-import mmcv
+import custom_mmcv as mmcv
 from custom_mmcv.transforms import to_tensor
 from custom_mmdet.datasets.transforms import LoadAnnotations, RandomCrop, PackDetInputs, Mosaic, CachedMosaic, CachedMixUp, FilterAnnotations
 from custom_mmdet.structures.mask import BitmapMasks, PolygonMasks

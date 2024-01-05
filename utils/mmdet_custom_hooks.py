@@ -2,7 +2,7 @@ from mmengine.fileio import FileClient
 from mmengine.dist import master_only
 from einops import rearrange
 import torch
-import mmcv
+import custom_mmcv as mmcv
 import numpy as np
 import os.path as osp
 import cv2
