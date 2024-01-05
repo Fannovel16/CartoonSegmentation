@@ -13,11 +13,11 @@ from mmengine.fileio import FileClient, dump, load
 from mmengine.logging import MMLogger
 from terminaltables import AsciiTable
 
-from custom_mmdet.datasets.api_wrappers import COCO, COCOeval
-from custom_mmdet.registry import METRICS
-from custom_mmdet.structures.mask import encode_mask_results
+from mmdet.datasets.api_wrappers import COCO, COCOeval
+from mmdet.registry import METRICS
+from mmdet.structures.mask import encode_mask_results
 # from ..functional import eval_recalls
-from custom_mmdet.evaluation.metrics import CocoMetric
+from mmdet.evaluation.metrics import CocoMetric
 
 
 @METRICS.register_module()

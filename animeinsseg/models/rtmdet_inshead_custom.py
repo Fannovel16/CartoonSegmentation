@@ -13,17 +13,17 @@ from mmengine.model import (BaseModule, bias_init_with_prob, constant_init,
 from mmengine.structures import InstanceData
 from torch import Tensor
 
-from custom_mmdet.models.layers.transformer import inverse_sigmoid
-from custom_mmdet.models.utils import (filter_scores_and_topk, multi_apply,
+from mmdet.models.layers.transformer import inverse_sigmoid
+from mmdet.models.utils import (filter_scores_and_topk, multi_apply,
                                 select_single_mlvl, sigmoid_geometric_mean)
-from custom_mmdet.registry import MODELS
-from custom_mmdet.structures.bbox import (cat_boxes, distance2bbox, get_box_tensor,
+from mmdet.registry import MODELS
+from mmdet.structures.bbox import (cat_boxes, distance2bbox, get_box_tensor,
                                    get_box_wh, scale_boxes)
-from custom_mmdet.utils import ConfigType, InstanceList, OptInstanceList, reduce_mean
-from custom_mmdet.models.dense_heads.rtmdet_head import RTMDetHead
-from custom_mmdet.models.dense_heads.rtmdet_ins_head import RTMDetInsHead, RTMDetInsSepBNHead, MaskFeatModule
+from mmdet.utils import ConfigType, InstanceList, OptInstanceList, reduce_mean
+from mmdet.models.dense_heads.rtmdet_head import RTMDetHead
+from mmdet.models.dense_heads.rtmdet_ins_head import RTMDetInsHead, RTMDetInsSepBNHead, MaskFeatModule
 
-from custom_mmdet.utils import AvoidCUDAOOM
+from mmdet.utils import AvoidCUDAOOM
 
 
 

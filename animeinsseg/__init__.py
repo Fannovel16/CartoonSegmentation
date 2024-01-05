@@ -12,15 +12,15 @@ import numpy as np
 from typing import List, Tuple, Union, Optional, Callable
 from mmengine import Config
 from mmengine.model.utils import revert_sync_batchnorm
-from custom_mmdet.utils import register_all_modules, get_test_pipeline_cfg
-from custom_mmdet.apis import init_detector
-from custom_mmdet.registry import MODELS
-from custom_mmdet.structures import DetDataSample, SampleList
-from custom_mmdet.structures.bbox.transforms import scale_boxes, get_box_wh
-from custom_mmdet.models.dense_heads.rtmdet_ins_head import RTMDetInsHead
+from mmdet.utils import register_all_modules, get_test_pipeline_cfg
+from mmdet.apis import init_detector
+from mmdet.registry import MODELS
+from mmdet.structures import DetDataSample, SampleList
+from mmdet.structures.bbox.transforms import scale_boxes, get_box_wh
+from mmdet.models.dense_heads.rtmdet_ins_head import RTMDetInsHead
 from pycocotools.coco import COCO
 from custom_mmcv.transforms import Compose
-from custom_mmdet.models.detectors.single_stage import SingleStageDetector
+from mmdet.models.detectors.single_stage import SingleStageDetector
 
 from utils.logger import LOGGER
 from utils.io_utils import square_pad_resize, find_all_imgs, imglist2grid, mask2rle, dict2json, scaledown_maxsize, resize_pad

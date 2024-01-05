@@ -5,14 +5,14 @@ import copy
 from time import time
 import custom_mmcv as mmcv
 from custom_mmcv.transforms import to_tensor
-from custom_mmdet.datasets.transforms import LoadAnnotations, RandomCrop, PackDetInputs, Mosaic, CachedMosaic, CachedMixUp, FilterAnnotations
-from custom_mmdet.structures.mask import BitmapMasks, PolygonMasks
-from custom_mmdet.datasets import CocoDataset
-from custom_mmdet.registry import DATASETS, TRANSFORMS
+from mmdet.datasets.transforms import LoadAnnotations, RandomCrop, PackDetInputs, Mosaic, CachedMosaic, CachedMixUp, FilterAnnotations
+from mmdet.structures.mask import BitmapMasks, PolygonMasks
+from mmdet.datasets import CocoDataset
+from mmdet.registry import DATASETS, TRANSFORMS
 from numpy import random
-from custom_mmdet.structures.bbox import autocast_box_type, BaseBoxes
+from mmdet.structures.bbox import autocast_box_type, BaseBoxes
 from mmengine.structures import InstanceData, PixelData
-from custom_mmdet.structures import DetDataSample
+from mmdet.structures import DetDataSample
 from utils.io_utils import bbox_overlap_xy
 from utils.logger import LOGGER
 
