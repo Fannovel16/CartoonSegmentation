@@ -1,4 +1,4 @@
-import custom_mmcv as mmcv, torch
+import mmcv as mmcv, torch
 from tqdm import tqdm
 from einops import rearrange
 import os
@@ -19,7 +19,7 @@ from mmdet.structures import DetDataSample, SampleList
 from mmdet.structures.bbox.transforms import scale_boxes, get_box_wh
 from mmdet.models.dense_heads.rtmdet_ins_head import RTMDetInsHead
 from pycocotools.coco import COCO
-from custom_mmcv.transforms import Compose
+from mmcv.transforms import Compose
 from mmdet.models.detectors.single_stage import SingleStageDetector
 
 from utils.logger import LOGGER

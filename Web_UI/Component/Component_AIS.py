@@ -7,7 +7,7 @@ import sys as Environment
 import cv2 as Vision
 # import trimesh as Meshing
 import gradio as Framework
-import custom_mmcv as Vision_MM
+import mmcv as Vision_MM
 # from diffusers import StableDiffusionPipeline as Pipeline
 import numpy as Number
 import torch as Engine

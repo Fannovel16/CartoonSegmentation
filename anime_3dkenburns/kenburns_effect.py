@@ -5,7 +5,7 @@ import numpy as np
 import torchvision
 import torch
 from omegaconf import OmegaConf
-import custom_mmcv as mmcv
+import mmcv as mmcv
 import math
 from PIL import Image
 import os.path as osp

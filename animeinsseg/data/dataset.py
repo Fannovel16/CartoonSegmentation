@@ -3,8 +3,8 @@ import numpy as np
 from typing import List, Optional, Sequence, Tuple, Union
 import copy
 from time import time
-import custom_mmcv as mmcv
-from custom_mmcv.transforms import to_tensor
+import mmcv as mmcv
+from mmcv.transforms import to_tensor
 from mmdet.datasets.transforms import LoadAnnotations, RandomCrop, PackDetInputs, Mosaic, CachedMosaic, CachedMixUp, FilterAnnotations
 from mmdet.structures.mask import BitmapMasks, PolygonMasks
 from mmdet.datasets import CocoDataset

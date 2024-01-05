@@ -2,14 +2,14 @@ from mmengine.fileio import FileClient
 from mmengine.dist import master_only
 from einops import rearrange
 import torch
-import custom_mmcv as mmcv
+import mmcv as mmcv
 import numpy as np
 import os.path as osp
 import cv2
 from typing import Optional, Sequence
 import torch.nn as nn
 from mmdet.apis import inference_detector
-from custom_mmcv.transforms import Compose
+from mmcv.transforms import Compose
 from mmdet.engine import DetVisualizationHook
 from mmdet.registry import HOOKS
 from mmdet.structures import DetDataSample

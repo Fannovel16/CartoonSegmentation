@@ -6,8 +6,8 @@ from typing import List, Optional, Tuple
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from custom_mmcv.cnn import ConvModule, is_norm
-from custom_mmcv.ops import batched_nms
+from mmcv.cnn import ConvModule, is_norm
+from mmcv.ops import batched_nms
 from mmengine.model import (BaseModule, bias_init_with_prob, constant_init,
                             normal_init)
 from mmengine.structures import InstanceData
